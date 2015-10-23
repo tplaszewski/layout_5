@@ -1,10 +1,26 @@
 #top{
-    margin-bottom: 55px;
+    
     #slider-top{
         height: 688px;
             .item{
                 text-align: center;
                 padding-top: 200px;
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 688px;
+                .scroll{
+                    font-size: 1.4rem;
+                    color: white;
+                    font-family: @font2;
+                    position: absolute;
+                    bottom: 25px;
+                    left: 50%;
+                    margin-left: -45px;
+                    img{
+                        margin-bottom: 37px;
+                    }
+                }
                 .caption{
                     color: white;
                     font-weight: 400;
@@ -75,20 +91,19 @@
             }
         }
         .owl-controls{
-            bottom: 0;
             position: absolute;
-            right: 0;
+            width: 100%;
+            top: 50%;
+            transform: translateY(-50%);
             .owl-pagination{
                 display: none;
             }
             .owl-buttons{
-                position: relative;
+                
                 div{
-                    width: 37px;
-                    height: 37px;
-                    background-color: @black;
-                    opacity: 0.7;
-                    border-radius: 5px;
+                    width: 18px;
+                    height: 30px;
+                    
                     background-repeat: no-repeat;
                     background-position: center center;
                     position: absolute;
@@ -96,11 +111,11 @@
                     text-indent: -1000em;
                     &.owl-prev{
                         background-image: url(../img/ico_left_slider_top.png); 
-                        right: 42px;
+                        left: -30px;
                     }
                     &.owl-next{
                         background-image: url(../img/ico_right_slider_top.png); 
-                        right: 0;
+                        right: -30px;
                     }
                 }
             }

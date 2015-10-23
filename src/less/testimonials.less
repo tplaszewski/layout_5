@@ -1,102 +1,97 @@
 .testimonials{
-    padding:87px 0;
+    
     position: relative;
     z-index: 9999;
+    .container{
+        background-color: #f5f5f5;
+        background-image: url(../img/testimonials_bg.jpg);
+        background-repeat: repeat-y;
+        background-position: top center;
+        padding: 0;
+        padding-top: 60px;
+        
+    }
     h3{
         font-weight: 400;
         margin-bottom: 66px;
     }
     
     #slider-testimonials{
-        width: 90%;
+        
         margin: 0 auto;
         font-size: 1.4rem;
         font-weight: 400;
-        line-height: 2.4rem;
-        text-align: left;
+        line-height: 3.2rem;
+        text-align: justify;
         text-shadow: none;
-        color: #a1a5ad;
-        font-weight: 700;
-        padding-left: 50px;
+        color: #747474;
+        font-style: italic;
+        font-weight: 400;
+       
         padding-bottom: 70px;
         position: relative;
         .carousel-caption{
-            position: relative;
-            left: 0;
-            right: 0;
-            top: 0;
             text-align: left;
             text-shadow: none;
-            padding-right: 240px;
             color: #a1a5ad;
             padding-top: 0;
         }
-        .person{
-            position: absolute;
-            top:0;
-            right: 0;
+        .item{
             .left{
-                display: inline-block;
-                vertical-align: middle;
-                margin-right: 15px;
+                width: 49.5%;
+                float: left;
+                //background-color: #f5f5f5;
+                background-image: url(../img/person_left.png);
+                background-position: left top;
+                background-repeat: no-repeat;
+                padding-left: 220px;
+                padding-top: 110px;
+                padding-bottom: 90px;
+                padding-right: 60px;
+                text-align: left;
+                margin-right: 2px;
             }
             .right{
-                display: inline-block;
-                vertical-align: middle;
+                width: 49.5%;
+                float: left;    
+                //background-color: #f5f5f5;
+                background-image: url(../img/person_right.png);
+                background-repeat: no-repeat;
+                background-position: right top;
+                padding-right: 220px;
+                padding-top: 110px;
+                padding-left: 60px;
+                padding-bottom: 90px;
+                text-align: right;
+            }
+            .person{
+                p{
+                    font-size: 1.4;
+                    font-family: @font2;
+                    line-height: 2rem;
+                    font-style: normal;
+                    &:first-child{
+                        font-size: 1.6rem;
+                    }
+                }
             }
         }
-        .carousel-indicators{
-            bottom: 0;
-            li{
-                width: 14px;
-                height: 14px;
-                margin: 0;
-            }
-        }
-        .carousel-inner{
-            
-        }
-        &::before{
-            content: '';
-            background-image: url(../img/ico_quote.png);
-            background-repeat: no-repeat;
-            background-position: 0px 0px;
-            position: absolute;
-            left: 0px;
-            top:0px;
-            width: 36px;
-            height: 26px;
-        }
-        .carousel-control{
-            background-image: none;
-            width: 37px;
-            height: 37px;
-            background-color: @black;
-            z-index: 10;
-            bottom: 0 !important;
-            top: auto;
-            background-repeat: no-repeat;
-            background-position: center center;
-            border-radius: 5px;
-            opacity: 0.7;
-            transition: all 0.8s ease 0s;
-            &:hover{
-                background-color: #4cc85e;
-                transition: all 0.8s ease 0s;
-                opacity: 1;
-            }
-            &.left{
-                background-image: url(../img/ico_left_slider_top.png);
-                left: 0;
-                right: auto;
-            }
-            &.right{
-                background-image: url(../img/ico_right_slider_top.png);
-                left: 40px;
-                right: auto;
-            }
-        }
+//        .person{
+//            position: absolute;
+//            top:0;
+//            right: 0;
+//            .left{
+//                display: inline-block;
+//                vertical-align: middle;
+//                margin-right: 15px;
+//            }
+//            .right{
+//                display: inline-block;
+//                vertical-align: middle;
+//            }
+//        }
         .owl-controls{
+            display: none !important;
             bottom: 0;
             position: absolute;
             left: 0;

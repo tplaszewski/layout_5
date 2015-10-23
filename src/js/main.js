@@ -1,3 +1,17 @@
+$(document).ready(function(){
+    var width = $(window).width();
+    if ((width <= 1480)) {
+        $('header .container').removeClass('container_over');
+        $('#top').removeClass('container_over').addClass('container');
+        $('#quote').removeClass('container_over').addClass('container');
+        $('#contact').removeClass('container_over').addClass('container');
+        $('#gallery .container').removeClass('container_over');
+        
+    }
+    
+});
+
+
 // jQuery
 $(window).load(function() { // makes sure the whole site is loaded
                 $('#status').fadeOut(); // will first fade out the loading animation
@@ -52,23 +66,118 @@ jQuery(document).ready(function( $ ) {
 window.onload = function () {
             var styles = [
     {
-        "featureType": "all",
-        "elementType": "all",
+        "featureType": "landscape",
         "stylers": [
             {
-                "invert_lightness": true
+                "saturation": -100
             },
             {
-                "saturation": 10
+                "lightness": 65
+            },
+            {
+                "visibility": "on"
+            }
+        ]
+    },
+    {
+        "featureType": "poi",
+        "stylers": [
+            {
+                "saturation": -100
+            },
+            {
+                "lightness": 51
+            },
+            {
+                "visibility": "simplified"
+            }
+        ]
+    },
+    {
+        "featureType": "road.highway",
+        "stylers": [
+            {
+                "saturation": -100
+            },
+            {
+                "visibility": "simplified"
+            }
+        ]
+    },
+    {
+        "featureType": "road.arterial",
+        "stylers": [
+            {
+                "saturation": -100
             },
             {
                 "lightness": 30
             },
             {
-                "gamma": 0.5
+                "visibility": "on"
+            }
+        ]
+    },
+    {
+        "featureType": "road.local",
+        "stylers": [
+            {
+                "saturation": -100
             },
             {
-                "hue": "#435158"
+                "lightness": 40
+            },
+            {
+                "visibility": "on"
+            }
+        ]
+    },
+    {
+        "featureType": "transit",
+        "stylers": [
+            {
+                "saturation": -100
+            },
+            {
+                "visibility": "simplified"
+            }
+        ]
+    },
+    {
+        "featureType": "administrative.province",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "water",
+        "elementType": "labels",
+        "stylers": [
+            {
+                "visibility": "on"
+            },
+            {
+                "lightness": -25
+            },
+            {
+                "saturation": -100
+            }
+        ]
+    },
+    {
+        "featureType": "water",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "hue": "#ffff00"
+            },
+            {
+                "lightness": -25
+            },
+            {
+                "saturation": -97
             }
         ]
     }
@@ -112,6 +221,13 @@ $(function() {
 	    }
 	  });
 	});
+
+
+
+
+
+
+
 
 $(document).ready(function() { 
     
